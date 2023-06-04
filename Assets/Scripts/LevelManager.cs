@@ -10,7 +10,15 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(LoadNextLevel());
+        if (autoLoadNextLevelAfter == 0)
+        {
+            Debug.Log("Level auto load disabled.");
+        }
+        else
+        {
+            StartCoroutine(LoadNextLevel());
+        }
+        
     }
 
     public void LoadLevel(string name)
