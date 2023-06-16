@@ -96,6 +96,9 @@ GameObject:
   - component: {fileID: 2788627751638101576}
   - component: {fileID: -1881276251191900235}
   - component: {fileID: 5148253339241923212}
+  - component: {fileID: 2788627752086220432}
+  - component: {fileID: 2788627752086220433}
+  - component: {fileID: 3568245613313086932}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -179,3 +182,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!50 &2788627752086220432
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2788627751638101578}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2788627752086220433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2788627751638101578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5dd9d826b0cf8ff9585c8f74f95493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3568245613313086932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2788627751638101578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ceb157fe26157059cb871856573f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
