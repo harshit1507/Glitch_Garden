@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0.5
+  seenEverySeconds: 10
+  anim: {fileID: 2788627751638101576}
 --- !u!61 &5148253339241923212
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,6 +8,10 @@ using UnityEngine.Serialization;
 public class Attacker : MonoBehaviour
 {
     [Range(-1f, 1.5f)] [SerializeField] float currentSpeed;
+    
+    [Tooltip("Average Number of seconds between appearance")]
+    [SerializeField] float seenEverySeconds;
+    
     private GameObject currentTarget;
     [SerializeField] private Animator anim;
     // Start is called before the first frame update
@@ -57,5 +61,10 @@ public class Attacker : MonoBehaviour
     {
         currentTarget = obj;
         
+    }
+
+    public float GetSeenEverySecond()
+    {
+        return seenEverySeconds;
     }
 }
