@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82db692037c16af0eaa8c38bed766491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starCost: 10
 --- !u!114 &6527022234240746095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +126,8 @@ MonoBehaviour:
   projectile: {fileID: 116343032611037804, guid: a1617304df105280fbb8d57caa7f55dd, type: 3}
   projectileParent: {fileID: 0}
   gun: {fileID: 6449978646298005100}
+  anim: {fileID: 0}
+  myLaneAttackerSpawner: {fileID: 0}
 --- !u!1 &6078272649228296319
 GameObject:
   m_ObjectHideFlags: 0

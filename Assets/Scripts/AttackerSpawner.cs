@@ -37,11 +37,7 @@ public class AttackerSpawner : MonoBehaviour
 
         float threshold = spawnPerSecond * Time.deltaTime / 5.0f;
 
-        if (Random.value < threshold)
-        {
-            return true;
-        }
-        return false;
+        return (Random.value < threshold);
     }
 
     void Spawn(GameObject attacker)

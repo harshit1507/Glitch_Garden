@@ -54,7 +54,7 @@ public class Attacker : MonoBehaviour
             }
         }
 
-        Debug.Log(name + " caused damage: " + damage);
+        // Debug.Log(name + " caused damage: " + damage);
     }
 
     public void Attack(GameObject obj)
