@@ -9,6 +9,16 @@ public class Shooter : MonoBehaviour
     [SerializeField] private GameObject projectileParent;
     [SerializeField] private GameObject gun;
 
+    private void Start()
+    {
+        projectileParent = GameObject.Find("Projectiles");
+
+        if (!projectileParent)
+        {
+            projectileParent = new GameObject("Projectiles");
+        }
+    }
+
     void Fire()
     {
         GameObject newProjectile = Instantiate(projectile) as GameObject;

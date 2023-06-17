@@ -30,7 +30,7 @@ public class Attacker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.name + " trigger enter.");
+        // Debug.Log(other.name + " trigger enter.");
     }
 
     void SetSpeed(float speed)
