@@ -8,6 +8,7 @@ public class PlayerPrefsManager : MonoBehaviour
     private const string MASTER_VOLUME_KEY = "master_volume";
     private const string DIFFICULTY_KEY = "difficulty";
     private const string LEVEL_KEY = "level_unlocked_";
+    private const string STAR_KEY = "star";
 
     public static void SetMasterVolume(float volume)
     {
@@ -65,6 +66,16 @@ public class PlayerPrefsManager : MonoBehaviour
     public static float GetDifficulty()
     {
         return PlayerPrefs.GetFloat(DIFFICULTY_KEY);
+    }
+
+    public static void SetStars(int stars)
+    {
+        PlayerPrefs.SetInt(STAR_KEY, stars);
+    }
+
+    public static int GetStars()
+    {
+        return PlayerPrefs.GetInt(STAR_KEY, 100);
     }
 }
 
